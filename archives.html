@@ -28,20 +28,11 @@
   }
 
   /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-  #main {
-    margin-left: 120px
+  #main {margin-left: 0;}
+  h1{
+    font-size: 100px;
   }
-
-  /* Remove margins from "page content" on small screens */
-  @media only screen and (max-width: 600px) {
-    #main {
-      margin-left: 0
-    }
-
-    .speaker {
-      display: none;
-    }
-  }
+  @media only screen and (max-width: 400px) {#main {margin-left: 0;} h1,.logo{position: relative; left: -2px; } .speaker{ position: relative;top:100px;}}
 </style>
 
 <body class="w3-white">
@@ -49,7 +40,7 @@
   <!-- Icon Bar (Sidebar - hidden on small screens) -->
   <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-indigo">
     <!-- Avatar image in top left corner -->
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-indigo w3-hover-cyan">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-indigo w3-hover-cyan">
       <i class="fa fa-home w3-xxlarge"></i>
       <p>Home</p>
     </a>
@@ -57,11 +48,11 @@
       <i class="fa fa-archive w3-xxlarge"></i>
       <p>Archive</p>
     </a>
-    <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-indigo w3-hover-cyan">
+    <a href="index.html#about" class="w3-bar-item w3-button w3-padding-large w3-indigo w3-hover-cyan">
       <i class="fa fa-info-circle w3-xxlarge"></i>
       <p>About</p>
     </a>
-    <a href="#sub" class="w3-bar-item w3-button w3-padding-large w3-indigo w3-hover-cyan">
+    <a href="index.html#sub" class="w3-bar-item w3-button w3-padding-large w3-indigo w3-hover-cyan">
       <i class="fa fa-bell w3-xxlarge"></i>
       <p>Subscribe</p>
     </a>
@@ -70,22 +61,19 @@
   <!-- Navbar on small screens (Hidden on medium and large screens) -->
   <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
     <div class="w3-bar w3-indigo w3-center w3-small">
-      <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-      <a href="#" class="w3-bar-item w3-button w3-active" style="width:25% !important">Archive</a>
-      <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">About</a>
-      <a href="#sub" class="w3-bar-item w3-button" style="width:25% !important">Subscribe</a>
+      <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">Home</a>
+      <a href="archives.html" class="w3-bar-item w3-button w3-active" style="width:25% !important">Archive</a>
+      <a href="index.html#about" class="w3-bar-item w3-button" style="width:25% !important">About</a>
+      <a href="index.html#sub" class="w3-bar-item w3-button" style="width:25% !important">Subscribe</a>
     </div>
   </div>
 
   <!-- Page Content -->
-  <div class="w3-padding-large" id="main">
+  <div class="w3-padding" id="main">
     <!-- Header/Home -->
     <header class="w3-container  w3-center w3-text-indigo" id="main">
-      <h1 class="w3-jumbo "
-        style="font-weight: 1000; display: inline; position: relative; right:150px; padding: 0px 0px 0px 0px;">Podcast
-      </h1>
-      <img src="images/IEEE-APSIT_blue.png" alt="IEEE logo" class="w3-padding logo" height="250"
-        style="position: center ; right:200px; @media screen and (max-width:400px) {position: relative; right:50px;}">
+      <img src="images/IEEE-APSIT_blue.png" alt="IEEE logo" class="w3-padding logo" height="250" style="position:relative ; right:200px; @media screen and (max-width:400px) {position: relative; right:50px;}">
+      <h1 class="w3-jumbo head" style=" display: inline; position: relative; right:150px; padding: 0px 0px 0px 0px;">Podcast</h1>
     </header>
 
     <div class="w3-container w3-text-indigo" id="archive">
@@ -95,6 +83,6 @@
           No Past Episodes Present
       </h4>
     </div>
+</div>
 </body>
-
 </html>
