@@ -7,86 +7,67 @@
 <link rel="stylesheet" href="googlegfont.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Montserrat", sans-serif
-  }
-
-  .w3-row-padding img {
-    margin-bottom: 12px
-  }
-
-  /* Set the width of the sidebar to 120px */
-  .w3-sidebar {
-    width: 120px;
-    background: #222;
-  }
-
-  /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-  #main {margin-left: 0;}
-  h1{
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+h1{
     text-decoration: underline;
     
   }
-  h1,.logo{
+h1,.logo{
   line-height: normal;
-  }
-  @media only screen and (max-width: 600px) {#main {margin-left: 0;} h1,.logo{position: relative; left: -2px; } .speaker{ position: relative;top:100px;}}
+}
+@media only screen and (max-width: 600px) {#main {margin-left: 0;} h1,.logo{position: relative; left: -2px;} .speaker{ position: relative;top:100px;}}
 </style>
-
 <body class="w3-white">
 
-  <!-- Icon Bar (Sidebar - hidden on small screens) -->
-  <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-indigo">
-    <!-- Avatar image in top left corner -->
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-indigo w3-hover-cyan">
-      <i class="fa fa-home w3-xxlarge"></i>
-      <p>Home</p>
-    </a>
-    <a href="archives.html" class="w3-bar-item w3-button w3-padding-large w3-indigo w3-hover-cyan">
-      <i class="fa fa-archive w3-xxlarge"></i>
-      <p>Archive</p>
-    </a>
-    <a href="index.html#about" class="w3-bar-item w3-button w3-padding-large w3-indigo w3-hover-cyan">
-      <i class="fa fa-info-circle w3-xxlarge"></i>
-      <p>About</p>
-    </a>
-    <a href="index.html#sub" class="w3-bar-item w3-button w3-padding-large w3-indigo w3-hover-cyan">
-      <i class="fa fa-bell w3-xxlarge"></i>
-      <p>Subscribe</p>
-    </a>
-  </nav>
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center w3-indigo">
+  <!-- Avatar image in top left corner -->
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-indigo w3-hover-cyan">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>Home</p>
+  </a>
+  <a href="archives.html" class="w3-bar-item w3-button w3-padding-large w3-indigo w3-hover-cyan">
+    <i class="fa fa-archive w3-xxlarge"></i>
+    <p>Archive</p>
+  </a>
+  <a href="index.html#about" class="w3-bar-item w3-button w3-padding-large w3-indigo w3-hover-cyan">
+    <i class="fa fa-info-circle w3-xxlarge"></i>
+    <p>About</p>
+  </a>
+  <a href="index.html#sub" class="w3-bar-item w3-button w3-padding-large w3-indigo w3-hover-cyan">
+    <i class="fa fa-bell w3-xxlarge"></i>
+    <p>Subscribe</p>
+  </a>
+</nav>
 
-  <!-- Navbar on small screens (Hidden on medium and large screens) -->
-  <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-    <div class="w3-bar w3-indigo w3-center w3-small">
-      <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">Home</a>
-      <a href="archives.html" class="w3-bar-item w3-button w3-active" style="width:25% !important">Archive</a>
-      <a href="index.html#about" class="w3-bar-item w3-button" style="width:25% !important">About</a>
-      <a href="index.html#sub" class="w3-bar-item w3-button" style="width:25% !important">Subscribe</a>
-    </div>
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-indigo w3-center w3-small">
+    <a href="index.html" class="w3-bar-item w3-button" style="width:25% !important">Home</a>
+    <a href="archives.html" class="w3-bar-item w3-button" style="width:25% !important">Archive</a>
+    <a href="index.html#about" class="w3-bar-item w3-button" style="width:25% !important">About</a>
+    <a href="index.html#sub" class="w3-bar-item w3-button" style="width:25% !important">Subscribe</a>
   </div>
+</div>
+<div class="w3-padding" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container  w3-center w3-text-indigo" id="main">
+    <img src="images/IEEE-APSIT_blue.png" alt="IEEE logo" class="w3-padding logo" height="250" style="position:relative ; right:200px; @media screen and (max-width:600px) {position: relative; right:50px;}">
+    <h1 class="w3-jumbo " style="display: inline; position: relative; right:150px; padding: 0px 0px 0px 0px;">Podcast</h1>
+  </header>
+  <div class="w3-container w3-text-indigo" id="archive" >
+    <h2><b>Archive</b></h2>
 
-  <!-- Page Content -->
-  <div class="w3-padding" id="main">
-    <!-- Header/Home -->
-    <header class="w3-container  w3-center w3-text-indigo" id="main">
-      <img src="images/IEEE-APSIT_blue.png" alt="IEEE logo" class="w3-padding logo" height="250" style="position:relative ; right:200px; @media screen and (max-width:600px) {position: relative; right:50px;}">
-      <h1 class="w3-jumbo head" style=" display: inline; position: relative; right:150px; padding: 0px 0px 0px 0px;">Podcast</h1>
-    </header>
-
-    <div class="w3-container w3-text-indigo" id="archive">
-      <h2><b>Archive</b></h2>
-
-      <h4>
-          No Past Episodes Present
-      </h4>
-    </div>
+    <h4>
+        No Past Episodes Present
+    </h4>
+  </div>
 </div>
 </body>
 </html>
